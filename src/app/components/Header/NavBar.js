@@ -79,7 +79,7 @@ function NavBar(props) {
 					</div>
 
 					<div className={classes.resume}>
-						<a href="/khan_cv.pdf" target="blank"
+						<a href="/Mohammed Latif Siddiq.pdf" target="blank"
 							className={classes.linkNav}
 						>Resume</a>
 					</div>

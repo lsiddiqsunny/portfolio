@@ -57,7 +57,7 @@ class CP extends Component {
 
   render() {
     const { classes } = this.props;
-    const { totalContest, mxRating, currentRating } = this.state;
+    //const { totalContest, mxRating, currentRating } = this.state;
 
     return (
       <div className={classes.mainBody}>
@@ -68,11 +68,9 @@ class CP extends Component {
 
         <div className={classes.content}>
           <div className={classes.para} style={{ color: Colors.motoColor }}>
-            <p>I have participated in a few inter university programming contests and also participated in preliminary of acm-icpc Dhaka Regional thrice.<br /><br />
-              Mainly i participate in contests held in <a className={classes.link} href="https://codeforces.com/" target="blank">Codeforces</a>. I have participated in <b className={classes.highlight}>{totalContest}</b> contests. My current rating is <b className={classes.highlight}>{currentRating}</b> and i have a maximum  rating of <b className={classes.highlight}>{mxRating}</b>.
-                  I have solved about <b className={classes.highlight}>1500</b> problems and in the top <b className={classes.highlight}>250</b> in the standings made in terms of the number of solved problems.
-                  <br /><br />
-              Also i practice in <a className={classes.link} href="http://lightoj.com/login_main.php" target="blank">Light Oj</a> and <a className={classes.link} href="https://www.hackerrank.com/" target="blank">HackerRank</a>.<br /><br />
+            <p>I have participated in a few inter university programming contests and also participated in acm-icpc Dhaka Regional 2018.<br /><br />
+              Mainly I participate in contests held in <a className={classes.link} href="https://codeforces.com/" target="blank">Codeforces</a>,<a className={classes.link} href="https://www.codechef.com/" target="blank">Codechef</a>. 
+              Also I practice in <a className={classes.link} href="http://lightoj.com/login_main.php" target="blank">Light Oj</a> and <a className={classes.link} href="https://www.hackerrank.com/" target="blank">HackerRank</a>.<br /><br />
 
               I have participated in <a className={classes.link} href="./hashcode_2019_certificate.pdf" target="blank">Google HashCode 2019</a><br/>
             </p>
@@ -81,32 +79,40 @@ class CP extends Component {
           <div className={classes.solved}>My Codes</div>
           <div className={classes.repo}>
             <CPRepo
-              projectName="Codeforces"
-              profileURL="https://codeforces.com/profile/_lucifer_"
-              gitURL="https://github.com/Waqar-107/Codeforces"
-              projectDescription="accepted problems in Codeforces"
-              gitAPI="https://api.github.com/search/repositories?q=user%3AWaqar-107+repo%3Acodeforces+codeforces"
+              projectName="Leetcode"
+              profileURL="https://codeforces.com/profile/lsiddiqsunny"
+              gitURL="https://github.com/lsiddiqsunny/Leetcode-solve"
+              projectDescription="Problem solved in leetcode"
+              gitAPI="https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3ALeetcode-solve+Leetcode-solve"
             />
             <CPRepo
               projectName="LightOj"
-              profileURL="http://lightoj.com/volume_userstat.php?user_id=35486"
-              gitURL="https://github.com/Waqar-107/LightOJ"
-              projectDescription="accepted problems in Light Oj"
-              gitAPI="https://api.github.com/search/repositories?q=user%3AWaqar-107+repo%3ALightOj+LightOj"
+              profileURL="http://lightoj.com/volume_userstat.php?user_id="
+              gitURL="https://github.com/lsiddiqsunny/Solved-problem-from-lightoj"
+              projectDescription="Accepted problems in Light Oj"
+              
+              gitAPI="https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3ASolved-problem-from-lightoj+Solved-problem-from-lightoj"
             />
             <CPRepo
-              projectName="HackerRank"
-              profileURL="https://www.hackerrank.com/waqar_107"
-              gitURL="https://github.com/Waqar-107/Hackerrank"
-              projectDescription="programming language practices and problems solved in HackerRank"
-              gitAPI="https://api.github.com/search/repositories?q=user%3AWaqar-107+repo%3AHackerrank+Hackerrank"
-            />
-            <CPRepo
-              projectName="UVA"
+              projectName="Hash Code 2020"
               profileURL=""
-              gitURL="https://github.com/Waqar-107/UVa"
-              projectDescription="problems solved in UVA"
-              gitAPI="https://api.github.com/search/repositories?q=user%3AWaqar-107+repo%3AUVa+UVa"
+              gitURL="https://github.com/lsiddiqsunny/Hash-Code-2020"
+              projectDescription="Code for Hash Code 2020"
+              gitAPI="https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3AHash-Code-2020+Hash-Code-2020"
+            />
+            <CPRepo
+              projectName="Days with programming"
+              profileURL=""
+              gitURL="https://github.com/lsiddiqsunny/Days-with-programming"
+              //projectDescription="problems solved in various platform"
+              gitAPI="https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3ADays-with-programming+Days-with-programming"
+            />
+            <CPRepo
+              projectName="Contest Code"
+              profileURL=""
+              gitURL="https://github.com/lsiddiqsunny/programming-contest"
+              //projectDescription="problems solved in various platform"
+              gitAPI="https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3Aprogramming-contest+programming-contest"
             />
           </div>
         </div>

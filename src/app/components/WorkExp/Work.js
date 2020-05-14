@@ -17,7 +17,8 @@ function Work(props) {
       </div>
       <div className={classes.content}
         style={{ color: Colors.motoColor, fontSize: '22px' }}>
-        I haven't worked officially anywhere but did a project with a group of 12 peoples in a cross-platform application.
+        I was working at Online Sohopathi, a website for students to ask their questions. I worked in a project with a group of twelve people in a cross-platform application.
+        I am currently working on another group project which consists of five people under Dr. A. B. M. Alim Al Islam, Professor, Department of Computer Science and Engineering, BUET.
       </div>
     </div>
   );

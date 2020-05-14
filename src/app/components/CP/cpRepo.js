@@ -179,7 +179,7 @@ class cpRepo extends Component {
     else if (projectName === 'LightOj')
       return this.getLoj();
     else
-      return this.getHack();
+      return null;
   };
 
   getCF = () => {
@@ -265,7 +265,7 @@ cpRepo.propTypes = {
   projectName: PropTypes.string.isRequired,
   projectDescription: PropTypes.string.isRequired,
   gitURL: PropTypes.string.isRequired,
-  profileURL: PropTypes.string.isRequired,
+  profileURL: PropTypes.string,
   gitAPI: PropTypes.string.isRequired,
 }
 

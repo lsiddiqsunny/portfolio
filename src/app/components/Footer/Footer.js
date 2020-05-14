@@ -118,13 +118,13 @@ class Footer extends Component {
           </div>
 
           <div className={classes.ackDivide}>
-            <a className={classes.link} href="https://github.com/Waqar-107" target="blank">Re-implemented by Waqar-107</a>
+            <a className={classes.link} href="https://github.com/lsiddiqsunny" target="blank">Re-implemented by Latif Siddiq Sunny</a>
           </div>
         </div>
         <div className={classes.ackLarger}>
           <a className={classes.link} href="https://github.com/bchiang7/v4" target="blank">Originally designed by Brittany Chiang.</a>
 
-          <a className={classes.link} href="https://github.com/Waqar-107" target="blank">Re-implemented by Waqar-107</a>
+          <a className={classes.link} href="https://github.com/lsiddiqsunny" target="blank">Re-implemented by Latif Siddiq Sunny</a>
         </div>
       </div>
     );

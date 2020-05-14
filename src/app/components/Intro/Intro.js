@@ -18,7 +18,7 @@ function Intro(props) {
         <div
           style={{ color: Colors.nameColor }}
           className={classes.name}
-        >Waqar Hassan Khan</div>
+        >Latif Siddiq Sunny</div>
 
         <div
           style={{ color: Colors.motoColor }}
@@ -28,11 +28,11 @@ function Intro(props) {
         <div
           style={{ color: Colors.shortDescriptionColor }}
           className={classes.shortDescription}
-        >I'm a final year cs undergrad student,<br /> seeking internship opportunities.</div>
+        >I'm a final year cs undergrad student,<br /> seeking internship or full time opportunities.</div>
 
         <div className={classes.mailMe}>
           <a className={classes.mailLink}
-            href="mailto:waqar.hassan866@gmail.com">send me owls!!</a>
+            href="mailto:lsiddiqsunny@gmail.com">send me owls!!</a>
         </div>
       </div>
     </div>

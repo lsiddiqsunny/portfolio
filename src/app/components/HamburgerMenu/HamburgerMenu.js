@@ -138,7 +138,7 @@ class HamburgerMenu extends React.Component {
           </div>
 
           <div className={classes.resume}>
-            <a href="/khan_cv.pdf" target="blank"
+            <a href="/lsiddiqsunny.pdf" target="blank"
               className={classes.linkNav}
               style={{ color: Colors.themeFontColor }}
             >Resume</a>
