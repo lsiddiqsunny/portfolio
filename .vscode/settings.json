@@ -1,3 +1,9 @@
 {
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "appService.deploySubpath": ".",
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/19ebdd83-3596-47ac-aa7a-139d748577a3/resourceGroups/AppServiceQS-rg/providers/Microsoft.Web/sites/lsiddiqsunny"
 }
