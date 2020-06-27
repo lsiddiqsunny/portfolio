@@ -110,7 +110,7 @@ function Contact(props) {
       <div className={classes.heading}>05. What's Next?</div>
       <div className={classes.head2}>Get In Touch</div>
       <div className={classes.kotha}>
-        I am expecting to graduate by October 2020 and eager to do intern or full time to get acquainted with the industry. I'm interested in developing things using C++,Java and Python. I am currently focusing in devlopment mobile application with Flutter.
+        I am expecting to graduate by October 2020 and eager to do intern or full time to get acquainted with the industry. I'm interested in developing things using C++,Java and Python. I am currently focusing in devlopment mobile application with Flutter, data science and deep learning.
 								<br />
         My Inbox is always opened. You can communicate with me through email if you want. I'll try my best to answer back!!!
 							</div>
