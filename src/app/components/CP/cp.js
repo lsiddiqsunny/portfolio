@@ -10,119 +10,153 @@ import styles from './cpStyles';
 import Colors from '../../styles/Colors';
 
 class CP extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      userDetails: {},
-      userRating: {},
+    constructor(props) {
+        super(props);
+        this.state = {
+            userDetails: {},
+            userRating: {},
 
-      currentRating: 'loading',
-      mxRating: 'loading',
-      totalContest: 'loading',
+            currentRating: 'loading',
+            mxRating: 'loading',
+            totalContest: 'loading',
+        }
     }
-  }
 
-  componentDidMount() {
-    fetchUserDetail((data) => {
-      this.setState({ userDetails: data }, () => {
-        this.parse1()
-      });
-    });
+    componentDidMount() {
+        fetchUserDetail((data) => {
+            this.setState({ userDetails: data }, () => {
+                this.parse1()
+            });
+        });
 
-    fetchRating((data) => {
-      this.setState({ userRating: data }, () => {
-        this.parse2()
-      });
-    });
-  }
+        fetchRating((data) => {
+            this.setState({ userRating: data }, () => {
+                this.parse2()
+            });
+        });
+    }
 
-  parse1 = () => {
-    let { mxRating, currentRating } = this.state;
-    const { userDetails } = this.state;
+    parse1 = () => {
+        let { mxRating, currentRating } = this.state;
+        const { userDetails } = this.state;
 
-    mxRating = userDetails.data.result[0].maxRating;
-    currentRating = userDetails.data.result[0].rating;
+        mxRating = userDetails.data.result[0].maxRating;
+        currentRating = userDetails.data.result[0].rating;
 
-    this.setState({ mxRating });
-    this.setState({ currentRating });
-  }
+        this.setState({ mxRating });
+        this.setState({ currentRating });
+    }
 
-  parse2 = () => {
-    let { totalContest } = this.state;
-    const { userRating } = this.state;
+    parse2 = () => {
+        let { totalContest } = this.state;
+        const { userRating } = this.state;
 
-    totalContest = userRating.data.result.length;
-    this.setState({ totalContest });
-  }
+        totalContest = userRating.data.result.length;
+        this.setState({ totalContest });
+    }
 
-  render() {
-    const { classes } = this.props;
-    //const { totalContest, mxRating, currentRating } = this.state;
+    render() {
+        const { classes } = this.props;
+        //const { totalContest, mxRating, currentRating } = this.state;
 
-    return (
-      <div className={classes.mainBody}>
-        <div className={classes.heading}>
-          <TitleHead number="03."
-            caption="Problem Solving" />
-        </div>
+        return ( <
+            div className = { classes.mainBody } >
+            <
+            div className = { classes.heading } >
+            <
+            TitleHead number = "03."
+            caption = "Problem Solving" / >
+            <
+            /div>
 
-        <div className={classes.content}>
-          <div className={classes.para} style={{ color: Colors.motoColor }}>
-            <p>I have participated in a few inter university programming contests and also participated in acm-icpc Dhaka Regional 2018.<br /><br />
-              Mainly I participate in contests held in <a className={classes.link} href="https://codeforces.com/" target="blank">Codeforces</a>,<a className={classes.link} href="https://www.codechef.com/" target="blank">Codechef</a>. 
-              Also I practice in <a className={classes.link} href="http://lightoj.com/login_main.php" target="blank">Light Oj</a> and <a className={classes.link} href="https://www.hackerrank.com/" target="blank">HackerRank</a>.<br /><br />
+            <
+            div className = { classes.content } >
+            <
+            div className = { classes.para }
+            style = {
+                { color: Colors.motoColor }
+            } >
+            <
+            p > I have participated in a few inter university programming contests and also participated in acm - icpc Dhaka Regional 2018. < br / > < br / >
+            Mainly I participate in contests held in < a className = { classes.link }
+            href = "https://codeforces.com/"
+            target = "blank" > Codeforces < /a>,<a className={classes.link} href="https:/ / www.codechef.com / " target="
+            blank ">Codechef</a>.
+            Also I practice in < a className = { classes.link }
+            href = "http://lightoj.com/login_main.php"
+            target = "blank" > Light Oj < /a> and <a className={classes.link} href="https:/ / www.hackerrank.com / " target="
+            blank ">HackerRank</a>.<br /><br />
 
-              I have participated in <a className={classes.link} href="./hashcode_2019_certificate.pdf" target="blank">Google HashCode 2019</a><br/>
-            </p>
-          </div>
+            I have participated in < a className = { classes.link }
+            href = "./hashcode_2019_certificate.pdf"
+            target = "blank" > Google HashCode 2019 < /a> and 2020<br / >
+            <
+            /p> < /
+            div >
 
-          <div className={classes.solved}>My Codes</div>
-          <div className={classes.repo}>
-            <CPRepo
-              projectName="Leetcode"
-              profileURL="https://codeforces.com/profile/lsiddiqsunny"
-              gitURL="https://github.com/lsiddiqsunny/Leetcode-solve"
-              projectDescription="Problem solved in leetcode"
-              gitAPI="https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3ALeetcode-solve+Leetcode-solve"
-            />
-            <CPRepo
-              projectName="LightOj"
-              profileURL="http://lightoj.com/volume_userstat.php?user_id="
-              gitURL="https://github.com/lsiddiqsunny/Solved-problem-from-lightoj"
-              projectDescription="Accepted problems in Light Oj"
-              
-              gitAPI="https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3ASolved-problem-from-lightoj+Solved-problem-from-lightoj"
-            />
-            <CPRepo
-              projectName="Hash Code 2020"
-              profileURL=""
-              gitURL="https://github.com/lsiddiqsunny/Hash-Code-2020"
-              projectDescription="Code for Hash Code 2020"
-              gitAPI="https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3AHash-Code-2020+Hash-Code-2020"
-            />
-            <CPRepo
-              projectName="Days with programming"
-              profileURL=""
-              gitURL="https://github.com/lsiddiqsunny/Days-with-programming"
-              //projectDescription="problems solved in various platform"
-              gitAPI="https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3ADays-with-programming+Days-with-programming"
-            />
-            <CPRepo
-              projectName="Contest Code"
-              profileURL=""
-              gitURL="https://github.com/lsiddiqsunny/programming-contest"
-              //projectDescription="problems solved in various platform"
-              gitAPI="https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3Aprogramming-contest+programming-contest"
-            />
-          </div>
-        </div>
-      </div>
-    );
-  }
+            <
+            div className = { classes.solved } > My Codes < /div> <
+            div className = { classes.repo } >
+            <
+            CPRepo projectName = "Leetcode"
+            profileURL = "https://codeforces.com/profile/lsiddiqsunny"
+            gitURL = "https://github.com/lsiddiqsunny/Leetcode-solve"
+            projectDescription = "Problem solved in leetcode"
+            gitAPI = "https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3ALeetcode-solve+Leetcode-solve" /
+            >
+            <
+            CPRepo projectName = "LightOj"
+            profileURL = "http://lightoj.com/volume_userstat.php?user_id="
+            gitURL = "https://github.com/lsiddiqsunny/Solved-problem-from-lightoj"
+            projectDescription = "Accepted problems in Light Oj"
+
+            gitAPI = "https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3ASolved-problem-from-lightoj+Solved-problem-from-lightoj" /
+            >
+            <
+            CPRepo projectName = "Hash Code 2020"
+            profileURL = ""
+            gitURL = "https://github.com/lsiddiqsunny/Hash-Code-2020"
+            projectDescription = "Code for Hash Code 2020"
+            gitAPI = "https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3AHash-Code-2020+Hash-Code-2020" /
+            >
+            <
+            CPRepo projectName = "CSES Solution"
+            profileURL = ""
+            gitURL = "https://github.com/lsiddiqsunny/The-Google-Foo-Bar-Challenge"
+            projectDescription = "Competitive problem solution from CSES platform"
+            gitAPI = "https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3AThe-Google-Foo-Bar-Challenge+The-Google-Foo-Bar-Challenge" /
+            >
+            <
+            CPRepo projectName = "The Google FooBar Challenge"
+            profileURL = ""
+            gitURL = "https://github.com/lsiddiqsunny/CSES-Solution"
+            //projectDescription = "Competitive problem solution from CSES platform"
+            gitAPI = "https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3ACSES-Solution+CSES-Solution" /
+            >
+            <
+            CPRepo projectName = "Days with programming"
+            profileURL = ""
+            gitURL = "https://github.com/lsiddiqsunny/Days-with-programming"
+            //projectDescription="problems solved in various platform"
+            gitAPI = "https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3ADays-with-programming+Days-with-programming" /
+            >
+            <
+            CPRepo projectName = "Contest Code"
+            profileURL = ""
+            gitURL = "https://github.com/lsiddiqsunny/programming-contest"
+            //projectDescription="problems solved in various platform"
+            gitAPI = "https://api.github.com/search/repositories?q=user%3Alsiddiqsunny+repo%3Aprogramming-contest+programming-contest" /
+            >
+            <
+            /div> < /
+            div > <
+            /div>
+        );
+    }
 }
 
 CP.propTypes = {
-  classes: PropTypes.object.isRequired
+    classes: PropTypes.object.isRequired
 }
 
 
