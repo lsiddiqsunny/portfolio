@@ -62,13 +62,14 @@ class Projects extends Component {
             div className = { classes.content } >
             <
             FeatProject mirror = { false }
-            imageName = "Vasha Shikkha"
-            projectName = "vasha Shikkha"
+            imageName = "VashaShikkha"
+            projectName = "VashaS hikkha"
             projectDescription = "An application that helps us learn English in a very interactive way. In this app, we can practice speaking, reading, listening and writing. Different user will be assigned different tasks based on their chosen topic. In this app, the user can practice speaking, reading, listening and writing.
             This is a group project where i have worked in the web - app team.
             "
             technologiesUsed = {
-                ["React", 'Flutter', 'Laravel'] }
+                ["React", 'Flutter', 'Laravel']
+            }
             deployedLink = "https://vashasikkha.mainframelabs.ltd/"
             gitURL = "" /
             >
@@ -79,7 +80,8 @@ class Projects extends Component {
             projectName = "ShashoSheba"
             projectDescription = "A mobile application for connecting doctor and patient from remote area. "
             technologiesUsed = {
-                ["Flutter", "Nodejs", 'AppRTC'] }
+                ["Flutter", "Nodejs", 'AppRTC']
+            }
             deployedLink = ""
             gitURL = "https://github.com/lsiddiqsunny/ShashthoSheba" /
             >
@@ -105,9 +107,9 @@ class Projects extends Component {
             <
             div className = { classes.seeMore }
             onClick = {
-                () => this.handleSeeMore() } >
-            { seeMore ? 'More Projects' : 'Fewer Projects' } < /div> <
-            /div>
+                () => this.handleSeeMore()
+            } > { seeMore ? 'More Projects' : 'Fewer Projects' } < /div> < /
+            div >
 
             <
             div className = { classes.myProjects } > My Coursework < /div> <
@@ -130,9 +132,9 @@ class Projects extends Component {
             <
             div className = { classes.seeMore }
             onClick = {
-                () => this.handleCourse() } >
-            { seeMore ? 'More Courses' : 'Fewer Courses' } < /div> <
-            /div>
+                () => this.handleCourse()
+            } > { seeMore ? 'More Courses' : 'Fewer Courses' } < /div> < /
+            div >
 
             <
             div className = { classes.myProjects } > Undergraduate Courses < /div> <
@@ -153,11 +155,11 @@ class Projects extends Component {
             <
             div className = { classes.seeMore }
             onClick = {
-                () => this.handleUgrad() } >
-            { seeMoreUgrad ? 'More Courses' : 'Fewer Courses' } < /div> <
-            /div> <
-            /div> <
-            /div>
+                () => this.handleUgrad()
+            } > { seeMoreUgrad ? 'More Courses' : 'Fewer Courses' } < /div> < /
+            div > <
+            /div> < /
+            div >
         );
     }
 }
