@@ -27,8 +27,8 @@ function NavBar(props) {
         <
         p className = { classes.p1 } > 01. < /p><p className={classes.p2}>&nbsp;&nbsp;About</p >
         <
-        /Link> <
-        /div>
+        /Link> < /
+        div >
 
         <
         div className = { classes.navItem } >
@@ -42,8 +42,8 @@ function NavBar(props) {
         <
         p className = { classes.p1 } > 02. < /p><p className={classes.p2}>&nbsp;&nbsp;Experience</p >
         <
-        /Link> <
-        /div>
+        /Link> < /
+        div >
 
         <
         div className = { classes.navItem } >
@@ -57,8 +57,8 @@ function NavBar(props) {
         <
         p className = { classes.p1 } > 03. < /p><p className={classes.p2}>&nbsp;&nbsp;Problem Solving</p >
         <
-        /Link> <
-        /div>
+        /Link> < /
+        div >
 
         <
         div className = { classes.navItem } >
@@ -72,8 +72,8 @@ function NavBar(props) {
         <
         p className = { classes.p1 } > 04. < /p><p className={classes.p2}>&nbsp;&nbsp;Work</p >
         <
-        /Link> <
-        /div>
+        /Link> < /
+        div >
 
         <
         div className = { classes.navItem } >
@@ -87,24 +87,24 @@ function NavBar(props) {
         <
         p className = { classes.p1 } > 05. < /p><p className={classes.p2}>&nbsp;&nbsp;Contact</p >
         <
-        /Link> <
-        /div>
+        /Link> < /
+        div >
 
         <
         div className = { classes.resume } >
         <
-        a href = "/lsiddiqsunny.pdf"
+        a href = "/Mohammed Latif Siddiq.pdf"
         target = "blank"
         className = { classes.linkNav } >
-        Resume < /a> <
-        /div> <
+        Resume < /a> < /
+        div > <
         /div> <
         div className = { classes.mobileNav } >
         <
         HamburgerMenu / >
         <
-        /div> <
-        /div> <
+        /div> < /
+        div > <
         /div>
     );
 }
