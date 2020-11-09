@@ -13,36 +13,40 @@ function Intro(props) {
         div className = { classes.intro } >
         <
         div style = {
-            { color: Colors.themeFontColor } }
+            { color: Colors.themeFontColor }
+        }
         className = { classes.hi } >
         Hi, my name is < /div>
 
         <
         div style = {
-            { color: Colors.nameColor } }
+            { color: Colors.nameColor }
+        }
         className = { classes.name } >
         Latif Siddiq Sunny < /div>
 
         <
         div style = {
-            { color: Colors.motoColor } }
+            { color: Colors.motoColor }
+        }
         className = { classes.moto } >
-        Software Engineering, System Design and Security Enthusiastic < /div>
+        Software Engineer < /div>
 
         <
         div style = {
-            { color: Colors.shortDescriptionColor } }
+            { color: Colors.shortDescriptionColor }
+        }
         className = { classes.shortDescription } >
-        I 'm a final year cs undergrad student,<br /> seeking internship or full time opportunities.</div>
+        I 'm a final year cs undergrad student,<br /> working as software engineer at LEADS Corporation Limited.</div>
 
         <
         div className = { classes.mailMe } >
         <
         a className = { classes.mailLink }
-        href = "mailto:lsiddiqsunny@gmail.com" > send me mail! < /a> <
-        /div> <
-        /div> <
-        /div>
+        href = "mailto:lsiddiqsunny@gmail.com" > send me mail! < /a> < /
+        div > <
+        /div> < /
+        div >
     );
 }
 

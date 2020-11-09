@@ -22,7 +22,8 @@ function Work(props) {
             { color: Colors.motoColor, fontSize: '22px' }
         } >
         I was working at Online Sohopathi, a website
-        for students to ask their questions.I worked in a project with a group of twelve people in a cross - platform application called Vasha Shikkha to help peaople learn language.I am currently working on another group project on telemedicine which consists of five people under Dr.A.B.M.Alim Al Islam, Professor, Department of Computer Science and Engineering, BUET. < /div> </div >
+        for students to ask their questions.I worked in a project with a group of twelve people in a cross - platform application called Vasha Shikkha to help peaople learn language.I was currently working on another group project on telemedicine which consists of five people under Dr.A.B.M.Alim Al Islam, Professor, Department of Computer Science and Engineering, BUET.I also worked as a software engineer in SIGMIND.ai
+        for a few months and now I am working as a software enigneer in LEADS Corporation Limited. < /div> </div >
     );
 }
 
