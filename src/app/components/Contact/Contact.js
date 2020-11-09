@@ -105,27 +105,25 @@ const styles = theme => ({
 
 function Contact(props) {
     const { classes } = props;
-    return ( <
-        div className = { classes.outerSurface } >
+    return (<
+        div className={classes.outerSurface} >
         <
-        div className = { classes.heading } > 05. What 's Next?</div> <
-        div className = { classes.head2 } > Get In Touch < /div> <
-        div className = { classes.kotha } >
-        I am expecting to graduate by January 2021 and eager to wait to make contribution in the industry. < br >
-        My Inbox is always opened.You can communicate with me through email
-        if you want.I 'll try my best to answer back!!! < /
-        div > <
-        div className = { classes.mailMe } >
-        <
-        a className = { classes.mailLink }
-        href = "mailto:lsiddiqsunny@gmail.com" > Say Hello < /a> < /
+            div className={classes.heading} > 05. What 's Next?</div> <
+        div className={classes.head2} > Get In Touch < /div> <
+        div className={classes.kotha} >
+        I am expecting to graduate by January 2021 and eager to wait to make contribution in the industry.My Inbox is always opened.You can communicate with me through email
+        if you want.I 'll try my best to answer back!!! < /div > <
+        div className={classes.mailMe} >
+                    <
+        a className={classes.mailLink}
+                        href="mailto:lsiddiqsunny@gmail.com" > Say Hello < /a> < /
         div > <
         /div>
     );
 }
 
 Contact.propTypes = {
-    classes: PropTypes.object.isRequired
+                            classes: PropTypes.object.isRequired
 }
 
 
