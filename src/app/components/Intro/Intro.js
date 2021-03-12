@@ -37,7 +37,7 @@ function Intro(props) {
             { color: Colors.shortDescriptionColor }
         }
         className = { classes.shortDescription } >
-        I 'm a final year cs undergrad student,<br /> working as software engineer at LEADS Corporation Limited.</div>
+        I was graduated from CSE, BUET in February, 2021,<br /> am working as Junior software engineer at REVE Systems.</div>
 
         <
         div className = { classes.mailMe } >
